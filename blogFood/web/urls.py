@@ -6,5 +6,7 @@ from . import views
 
 app_name = 'web'
 urlpatterns = [
-    path('', views.home , name = 'home')
+    path('', views.home , name = 'home'),
+    path('create/', views.create , name = 'create'),
+    path('upload/', views.upload, name = 'upload'),
 ]
